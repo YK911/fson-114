@@ -1,0 +1,80 @@
+/* #region Base */
+body {
+  font-family: sans-serif;
+  background-color: #fafafa;
+  color: #111111;
+}
+/* #endregion */
+
+/* #region Common */
+.benefits-title,
+.ingridient-title,
+.reviews-title {
+  color: var(--black, #111);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+/* #endregion */
+
+/* #region Benefits */
+.benefits {
+}
+.benefits-title {
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-subtitle {
+}
+.benefits-text {
+}
+/* .benefits-text:focus {
+  color: teal;
+  background-color: lightgreen;
+} */
+
+/* #endregion */
+
+/* #region Ingridients */
+.ingridient {
+}
+.ingridient-title {
+}
+.ingridient-list {
+}
+.ingridient-item {
+}
+.ingridient-img {
+}
+.ingridient-caption {
+}
+/* #endregion */
+
+/* #region Logo styling */
+/* .wrapper {
+  background-color: slategray;
+}
+.logo {
+  color: var(--IRIS, #4d5ae5);
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+.dark {
+  color: #2e2f42;
+}
+.light {
+  color: #f4f4fd;
+} */
+/* #endregion */

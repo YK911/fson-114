@@ -9,24 +9,42 @@
     />
     <meta name="keywords" content="chocolate shop candy" />
     <title>Simply chocolate</title>
+    <!-- Critical CSS -->
+    <style>
+      a {
+        color: darkmagenta;
+      }
+    </style>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- <div class="wrapper">
+      <a class="logo" href="">
+        Web
+        <span class="dark">Studio</span>
+      </a>
+
+      <a class="logo" href=""> Web<span class="light">Studio</span> </a>
+    </div> -->
+
     <!-- Header section -->
-    <header id="home">
-      <nav>
-        <a href="./index.html">
+    <header class="" id="home">
+      <nav class="nav">
+        <a class="" href="./index.html">
           SIMPLY CHOCOLATE
           <img src="./images/icons/logo.svg" alt="Simply Chocolate Logo" />
         </a>
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li>
-            <a href="#made">How it’s made?</a>
+            <a class="nav-link" href="#made">How it’s made?</a>
           </li>
           <li>
-            <a href="#reviews">Chocolate is loved</a>
+            <a class="nav-link" href="#reviews">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
@@ -66,7 +84,7 @@
     </header>
     <main>
       <!-- Hero section -->
-      <section>
+      <section class="hero">
         <h1>
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
@@ -79,21 +97,21 @@
         </a>
       </section>
       <!-- Benefits section -->
-      <section id="benefits">
-        <h2 hidden>Simply Chocolate benefits</h2>
-        <ul>
-          <li>
-            <h3>Unsurpassed taste</h3>
-            <p>
+      <section class="benefits" id="benefits">
+        <h2 class="benefits-title">Simply Chocolate benefits</h2>
+        <ul class="benefits-list">
+          <li class="benefits-item">
+            <h3 class="benefits-subtitle">Unsurpassed taste</h3>
+            <p class="benefits-text">
               Crafted with the finest quality cocoa beans and a dedication to
               perfection, each bite is a decadent experience that simply cannot
               be matched. Savor the richness and complexity of our Unsurpassed
               Taste and discover a new level of chocolate bliss.
             </p>
           </li>
-          <li>
-            <h3>Affordable price</h3>
-            <p>
+          <li class="benefits-item">
+            <h3 class="benefits-subtitle">Affordable price</h3>
+            <p class="benefits-text">
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
               mouth-watering truffles and velvety chocolate bars without
@@ -101,9 +119,9 @@
               affordable luxury today.
             </p>
           </li>
-          <li>
-            <h3>Own production</h3>
-            <p>
+          <li class="benefits-item">
+            <h3 class="benefits-subtitle">Own production</h3>
+            <p class="benefits-text">
               We take pride in our own production process, ensuring that every
               step is carefully crafted to perfection. From selecting the finest
               ingredients to handcrafting each piece, our attention to detail is
@@ -113,71 +131,80 @@
         </ul>
       </section>
       <!-- Ingridients section -->
-      <section>
-        <h2>It all adds up to one exceptional taste sensation</h2>
-        <ul>
-          <li>
+      <section class="ingridient">
+        <h2 class="ingridient-title"
+          >It all adds up to one exceptional taste sensation</h2
+        >
+        <ul class="ingridient-list">
+          <li class="ingridient-item">
             <img
+              class="ingridient-img"
               src="./images/ingridients/img-1.png"
               alt="1"
               width="214"
               height="160"
             />
-            <h3>MILK CHOCOLATE</h3>
+            <h3 class="ingridient-caption">MILK CHOCOLATE</h3>
           </li>
-          <li>
+          <li class="ingridient-item">
             <img
+              class="ingridient-img"
               src="./images/ingridients/img-2.png"
               alt="1"
               width="214"
               height="160"
             />
-            <h3>MILK</h3>
+            <h3 class="ingridient-caption">MILK</h3>
           </li>
-          <li>
+          <li class="ingridient-item">
             <img
+              class="ingridient-img"
               src="./images/ingridients/img-3.png"
               alt="1"
               width="214"
               height="160"
             />
-            <h3>NUTS</h3>
+            <h3 class="ingridient-caption">NUTS</h3>
           </li>
-          <li>
+          <li class="ingridient-item">
             <img
+              class="ingridient-img"
               src="./images/ingridients/img-4.png"
               alt="1"
               width="214"
               height="160"
             />
-            <h3>SEMI - SWEET CHOCOLATE</h3>
+            <h3 class="ingridient-caption">SEMI - SWEET CHOCOLATE</h3>
           </li>
-          <li>
+          <li class="ingridient-item">
             <img
+              class="ingridient-img"
               src="./images/ingridients/img-5.png"
               alt="1"
               width="214"
               height="160"
             />
-            <h3>CACAO</h3>
+            <h3 class="ingridient-caption">CACAO</h3>
           </li>
-          <li>
+          <li class="ingridient-item">
             <img
+              class="ingridient-img"
               src="./images/ingridients/img-6.png"
               alt="1"
               width="214"
               height="160"
             />
-            <h3>RASPBERRY</h3>
+            <h3 class="ingridient-caption">RASPBERRY</h3>
           </li>
-          <li>
+          <li class="ingridient-item">
             <img
+              class="ingridient-img"
               src="./images/ingridients/img-7.png"
               alt="1"
               width="214"
               height="160"
             />
-            <h3>COCONUT OIL</h3>
+            <h3 class="ingridient-caption">COCONUT OIL</h3>
           </li>
         </ul>
       </section>
