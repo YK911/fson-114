@@ -43,7 +43,17 @@ button {
 /* #endregion */
 
 /* #region Common */
+.ingridient,
+.made,
+.products,
+.bestsellers,
+.reviews {
+  padding: 60px 0;
+}
 .section-title {
+  width: 412px;
+  margin: 0 auto;
+  margin-bottom: 50px;
   font-size: 24px;
   line-height: 1.17;
   font-weight: 600;
@@ -72,11 +82,13 @@ button {
   width: 1168px;
   padding: 0 16px;
   margin: 0 auto;
-  background-color: rgba(173, 216, 230, 0.4);
 }
 
 /* Logo */
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.11;
@@ -87,6 +99,8 @@ button {
 
 /* Socials */
 .socials {
+  display: flex;
+  gap: 14px;
 }
 .socials-item {
 }
@@ -96,9 +110,14 @@ button {
 }
 /* Buttons */
 .btn {
+  min-width: 144px;
+  min-height: 45px;
+  padding: 14px 40px;
   font-size: 14px;
   font-weight: 600;
   background: transparent;
+  border-radius: 100px;
+  border: 1px solid transparent;
 }
 .btn-accent {
   color: #fff;
@@ -111,14 +130,17 @@ button {
 }
 .btn-primary {
   color: #ffffff;
+  border-color: #fff;
 }
 .btn-primary:hover,
 .btn-primary:focus {
   color: #fd9222;
+  border-color: #fd9222;
 }
 .btn-secondary {
   color: #111;
   font-size: 18px;
+  border-color: #fd9222;
 }
 .btn-secondary:hover,
 .btn-secondary:focus {
@@ -127,6 +149,11 @@ button {
 }
 
 .scroll-down {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
+
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -142,13 +169,27 @@ button {
 /* #region Header */
 .header {
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 90px;
+  flex-grow: 1;
 }
 .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 .nav-item {
 }
 .nav-link {
+  display: block;
+  padding: 32px 0;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -162,26 +203,44 @@ button {
 
 /* #region Hero */
 .hero {
+  padding-bottom: 80px;
+}
+.hero-container {
+  width: 1136px;
+  padding: 381px 40px 40px;
   background: rgba(17, 17, 17, 0.4);
+  border-radius: 30px;
 }
 .hero-title {
+  width: 484px;
+  margin-bottom: 32px;
   color: #fff;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.03em;
 }
+.hero-wrapper {
+  display: flex;
+  gap: 14px;
+}
 /* #endregion */
 
 /* #region Benefits */
 .benefits {
+  padding: 50px 0;
   background: #1e1823;
 }
 .benefits-list {
+  display: flex;
+  justify-content: center;
+  gap: 88px;
 }
 .benefits-item {
+  width: 308px;
 }
 .benefits-subtitle {
+  margin-bottom: 18px;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.22;
@@ -197,16 +256,37 @@ button {
 
 /* #region Ingridients */
 .ingridient {
+  padding-top: 120px;
 }
 .ingridient-title {
 }
 .ingridient-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 .ingridient-item {
+  width: calc((100% - 3 * 32px) / 4);
+  padding: 28px 23px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}
+/* a * n + b */
+.ingridient-item:nth-child(4n + 1) {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+.ingridient-item:nth-child(4n + 3) {
+  background-color: #1e1823;
+  color: #ffffff;
+}
+.ingridient-item:nth-child(2n) {
+  border-color: #fd9222;
 }
 .ingridient-img {
 }
 .ingridient-caption {
+  margin-top: 36px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.29;
@@ -218,17 +298,40 @@ button {
 /* #region Made */
 .made {
 }
+.made-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.made-left-side {
+  width: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.made-right-side {
+  width: 516px;
+  padding: 32px;
+  border-radius: 15px;
+  background: #fff;
+}
 .made-subtitle {
+  width: 350px;
+  margin-bottom: 28px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
 }
 .made-list {
+  /* display: flex;
+  flex-direction: column;
+  gap: 24px; */
 }
 .made-item {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+}
+.made-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 /* #endregion */
 
