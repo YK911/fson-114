@@ -457,16 +457,9 @@ button {
 
 /* #region Footer */
 .footer {
-  padding: 50px 0;
   background: #1e1823;
 }
-.footer-top {
-  display: flex;
-  padding-bottom: 50px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
 .footer-slogan {
-  width: 300px;
   color: #fff;
   font-size: 28px;
   font-weight: 500;
@@ -476,11 +469,7 @@ button {
 .footer-slogan-accent {
   color: #fd9222;
 }
-.footer-wrapper {
-  margin-left: auto;
-}
 .footer-caption {
-  margin-bottom: 14px;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -489,12 +478,10 @@ button {
 .footer-socials {
 }
 .footer-contacts {
-  margin-left: 50px;
 }
 .footer-contacts-list {
 }
-.footer-contacts-item.made-item:not(:last-child) {
-  margin-bottom: 4px;
+.footer-contacts-item {
 }
 .footer-contacts-link {
   color: #fff;
@@ -507,18 +494,11 @@ button {
 .footer-contacts-link:focus {
   color: #fd9222;
 }
-.footer-bottom {
-  padding-top: 24px;
-}
 .footer-nav {
-  display: flex;
-  gap: 24px;
 }
 .footer-nav-item {
 }
 .footer-nav-link {
-  display: block;
-  padding: 18px 0;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
