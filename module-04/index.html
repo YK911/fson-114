@@ -36,11 +36,9 @@
         <nav class="nav">
           <a class="logo" href="./index.html">
             <i>SIMPLY</i> CHOCOLATE
-            <img
-              class="logo-icon"
-              src="./images/icons/logo.svg"
-              alt="Simply Chocolate Logo"
-            />
+            <svg class="logo-icon" width="24" height="24">
+              <use href="./images/icons.svg#logo"></use>
+            </svg>
           </a>
           <ul class="nav-list">
             <li class="nav-item">
@@ -63,11 +61,9 @@
               rel="noopener noreferrer"
               aria-label="Link to Facebok"
             >
-              <img
-                class="socials-icon"
-                src="./images/icons/icon-facebook.svg"
-                alt="Facebook icon"
-              />
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
             </a>
           </li>
           <li class="socials-item">
@@ -78,11 +74,9 @@
               rel="noopener noreferrer"
               aria-label="Link to Instagram"
             >
-              <img
-                class="socials-icon"
-                src="./images/icons/icon-instagram.svg"
-                alt="Instagram icon"
-              />
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
             </a>
           </li>
           <li class="socials-item">
@@ -93,11 +87,9 @@
               rel="noopener noreferrer"
               aria-label="Link to Twitter"
             >
-              <img
-                class="socials-icon"
-                src="./images/icons/icon-twitter.svg"
-                alt="Twitter icon"
-              />
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -116,11 +108,9 @@
             <button class="btn btn-primary" type="button">How it’s made</button>
             <a class="scroll-down" href="#benefits">
               scroll down
-              <img
-                class="scroll-down-icon"
-                src="./images/icons/arrow.svg"
-                alt="Scroll down icon"
-              />
+              <svg class="scroll-down-icon" width="38" height="38">
+                <use href="./images/icons.svg#arrow"></use>
+              </svg>
             </a>
           </div>
         </div>
@@ -131,6 +121,11 @@
           <h2 class="visually-hidden">Simply Chocolate benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#chocolate"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Unsurpassed taste</h3>
               <p class="benefits-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -140,6 +135,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#coin"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Affordable price</h3>
               <p class="benefits-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -150,6 +150,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Own production</h3>
               <p class="benefits-text">
                 We take pride in our own production process, ensuring that every
@@ -257,6 +262,11 @@
                 width="600"
                 height="400"
               />
+              <button class="made-btn" type="button">
+                <svg class="made-btn-icon" width="44" height="44">
+                  <use href="./images/icons.svg#play"></use>
+                </svg>
+              </button>
             </div>
             <div class="made-right-side">
               <h3 class="made-subtitle">
@@ -418,33 +428,57 @@
           </h2>
           <ul class="bestsellers-list">
             <li class="bestsellers-item">
-              <img
-                class="bestsellers-ill"
-                src="./images/bestsellers/img-1.jpg"
-                alt="Chocolate with nuts"
-                width="368"
-                height="464"
-              />
+              <div class="bestsellers-wrapper">
+                <img
+                  class="bestsellers-ill"
+                  src="./images/bestsellers/img-1.jpg"
+                  alt="Chocolate with nuts"
+                  width="368"
+                  height="464"
+                />
+                <p class="overlay">
+                  Chocolate with fruit is an unbeatable combination of two of
+                  the tastiest things in the world. This dessert combines
+                  delicate and aromatic chocolate with fresh and juicy fruits,
+                  creating a true poetry of taste.
+                </p>
+              </div>
               <h3 class="bestsellers-caption">CHOCOLATE WITH NUTS</h3>
             </li>
             <li class="bestsellers-item">
-              <img
-                class="bestsellers-ill"
-                src="./images/bestsellers/img-2.jpg"
-                alt="Chocolate with fruits"
-                width="368"
-                height="464"
-              />
+              <div class="bestsellers-wrapper">
+                <img
+                  class="bestsellers-ill"
+                  src="./images/bestsellers/img-2.jpg"
+                  alt="Chocolate with fruits"
+                  width="368"
+                  height="464"
+                />
+                <p class="overlay">
+                  Chocolate with fruit is an unbeatable combination of two of
+                  the tastiest things in the world. This dessert combines
+                  delicate and aromatic chocolate with fresh and juicy fruits,
+                  creating a true poetry of taste.
+                </p>
+              </div>
               <h3 class="bestsellers-caption">CHOCOLATE WITH FRUITS</h3>
             </li>
             <li class="bestsellers-item">
-              <img
-                class="bestsellers-ill"
-                src="./images/bestsellers/img-3.jpg"
-                alt="Dark chocolate"
-                width="368"
-                height="464"
-              />
+              <div class="bestsellers-wrapper">
+                <img
+                  class="bestsellers-ill"
+                  src="./images/bestsellers/img-3.jpg"
+                  alt="Dark chocolate"
+                  width="368"
+                  height="464"
+                />
+                <p class="overlay">
+                  Chocolate with fruit is an unbeatable combination of two of
+                  the tastiest things in the world. This dessert combines
+                  delicate and aromatic chocolate with fresh and juicy fruits,
+                  creating a true poetry of taste.
+                </p>
+              </div>
               <h3 class="bestsellers-caption">DARK CHOCOLATE</h3>
             </li>
           </ul>
@@ -527,11 +561,9 @@
                   rel="noopener noreferrer"
                   aria-label="Link to Facebok"
                 >
-                  <img
-                    class="socials-icon"
-                    src="./images/icons/icon-facebook.svg"
-                    alt="Facebook icon"
-                  />
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
                 </a>
               </li>
               <li class="socials-item">
@@ -542,11 +574,9 @@
                   rel="noopener noreferrer"
                   aria-label="Link to Instagram"
                 >
-                  <img
-                    class="socials-icon"
-                    src="./images/icons/icon-instagram.svg"
-                    alt="Instagram icon"
-                  />
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
                 </a>
               </li>
               <li class="socials-item">
@@ -557,11 +587,9 @@
                   rel="noopener noreferrer"
                   aria-label="Link to Twitter"
                 >
-                  <img
-                    class="socials-icon"
-                    src="./images/icons/icon-twitter.svg"
-                    alt="Twitter icon"
-                  />
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
