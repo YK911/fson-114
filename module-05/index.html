@@ -171,7 +171,7 @@
         <div class="container">
           <h2 class="ingridient-title section-title">
             It all adds up to one exceptional
-            <span class="section-title-accent">taste</span> sensation
+            <span class="text-accent">taste</span> sensation
           </h2>
           <ul class="ingridient-list">
             <li class="ingridient-item">
@@ -251,7 +251,7 @@
       <section class="made" id="made">
         <div class="container">
           <h2 class="made-title section-title">
-            How it’s <span class="section-title-accent">made</span>?
+            How it’s <span class="text-accent">made</span>?
           </h2>
           <div class="made-wrapper">
             <div class="made-left-side">
@@ -302,7 +302,7 @@
       <section class="products">
         <div class="container">
           <h2 class="products-title section-title">
-            Our <span class="section-title-accent">products</span>
+            Our <span class="text-accent">products</span>
           </h2>
           <ul class="products-list">
             <li class="products-item">
@@ -424,7 +424,7 @@
       <section class="bestsellers">
         <div class="container">
           <h2 class="bestsellers-title section-title">
-            <span class="section-title-accent">Top</span> sellers
+            <span class="text-accent">Top</span> sellers
           </h2>
           <ul class="bestsellers-list">
             <li class="bestsellers-item">
@@ -488,7 +488,7 @@
       <section class="reviews" id="reviews">
         <div class="container">
           <h2 class="reviews-title section-title">
-            <span class="section-title-accent">Chocolate</span> is loved
+            <span class="text-accent">Chocolate</span> is loved
           </h2>
           <ul class="reviews-list">
             <li class="reviews-item">
@@ -536,9 +536,12 @@
               </p>
             </li>
           </ul>
-          <button class="reviews-btn btn btn-secondary" type="button"
-            >Leave a review</button
+          <button
+            class="reviews-btn btn btn-secondary js-open-modal"
+            type="button"
           >
+            Leave a review
+          </button>
         </div>
       </section>
     </main>
@@ -631,10 +634,17 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop">
+    <div class="backdrop js-modal">
       <div class="modal">
-        <button class="modal-btn" type="button">X</button>
-        <p class="modal-caption">LEAVE A REVIEW ABOUT OUR CHOCOLATE</p>
+        <button class="modal-btn js-close-modal" type="button">
+          <svg class="modal-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#x-close"></use>
+          </svg>
+        </button>
+        <p class="modal-caption">
+          LEAVE A REVIEW ABOUT
+          <span class="text-accent">OUR CHOCOLATE</span>
+        </p>
         <form class="modal-form" name="review">
           <div class="modal-form-field">
             <label class="modal-form-label" for="user-name">Name</label>
@@ -644,12 +654,100 @@
                 type="text"
                 id="user-name"
                 name="user-name"
+                minlength="2"
+                required
+                title="Please switch to english"
+                placeholder=" "
               />
               <svg class="modal-form-icon" width="24" height="24">
                 <use href="./images/icons.svg#user"></use>
               </svg>
+              <svg class="error-icon" width="24" height="24">
+                <use href="./images/icons.svg#error"></use>
+              </svg>
+              <span class="error-msg">Min name length 2 chars</span>
             </div>
           </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-email">Email</label>
+            <div class="modal-form-wrapper">
+              <input
+                class="modal-form-input"
+                type="email"
+                id="user-email"
+                name="user-email"
+                required
+                placeholder=" "
+              />
+              <svg class="modal-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-phone">
+              Phone number
+            </label>
+            <div class="modal-form-wrapper">
+              <input
+                class="modal-form-input"
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+              />
+              <svg class="modal-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-message">Comment</label>
+            <textarea
+              class="modal-form-message"
+              name="user-message"
+              id="user-message"
+              placeholder="Enter text"
+              minlength="20"
+              maxlength="250"
+            ></textarea>
+          </div>
+
+          <div class="modal-form-agremeent">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-agreement"
+              id="user-agreement"
+              value="true"
+            />
+            <!-- Ver. 2 -->
+            <!-- <input
+              class="custom-checkbox"
+              type="checkbox"
+              name="user-agreement"
+              id="user-agreement"
+              value="true"
+            /> -->
+
+            <label class="modal-form-agremeent-text" for="user-agreement">
+              <span class="modal-form-checkbox">
+                <svg class="modal-form-checkbox-icon" width="10" height="10">
+                  <use href="./images/icons.svg#check-mark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a
+                class="modal-form-agremeent-link"
+                href="https://cdn.websitepolicies.com/wp-content/uploads/2022/04/privacy-policy-template.pdf"
+                target="_blank"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+          <button class="btn btn-accent" type="submit">Send</button>
         </form>
       </div>
     </div>
