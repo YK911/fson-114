@@ -116,7 +116,7 @@
     </header>
     <main>
       <!-- Hero section -->
-      <section class="hero hide">
+      <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our&nbsp;finest ingredients for a
@@ -135,7 +135,7 @@
         </div>
       </section>
       <!-- Benefits section -->
-      <section class="benefits" id="benefits">
+      <section class="section benefits" id="benefits">
         <div class="container">
           <h2 class="visually-hidden">Simply Chocolate benefits</h2>
           <ul class="benefits-list">
@@ -186,7 +186,7 @@
         </div>
       </section>
       <!-- Ingridients section -->
-      <section class="ingridient hide">
+      <section class="section ingridient hide">
         <div class="container">
           <h2 class="ingridient-title section-title">
             It all adds up to one exceptional
@@ -267,7 +267,7 @@
         </div>
       </section>
       <!-- Made section -->
-      <section class="made hide" id="made">
+      <section class="section made hide" id="made">
         <div class="container">
           <h2 class="made-title section-title">
             How it’s <span class="text-accent">made</span>?
@@ -318,7 +318,7 @@
         </div>
       </section>
       <!-- Products section -->
-      <section class="products hide">
+      <section class="section products">
         <div class="container">
           <h2 class="products-title section-title">
             Our <span class="text-accent">products</span>
@@ -327,6 +327,10 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-1.jpg    1x,
+                  ./images/products/img-1@2x.jpg 2x
+                "
                 src="./images/products/img-1.jpg"
                 alt="Orange"
                 width="230"
@@ -341,6 +345,10 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-2.jpg    1x,
+                  ./images/products/img-2@2x.jpg 2x
+                "
                 src="./images/products/img-2.jpg"
                 alt="Apple&Cranberry"
                 width="230"
@@ -355,6 +363,10 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-3.jpg    1x,
+                  ./images/products/img-3@2x.jpg 2x
+                "
                 src="./images/products/img-3.jpg"
                 alt="Lime&Sea salt"
                 width="230"
@@ -369,6 +381,10 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-4.jpg    1x,
+                  ./images/products/img-4@2x.jpg 2x
+                "
                 src="./images/products/img-4.jpg"
                 alt="Pineapple"
                 width="230"
@@ -383,6 +399,10 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-5.jpg    1x,
+                  ./images/products/img-5@2x.jpg 2x
+                "
                 src="./images/products/img-5.jpg"
                 alt="Classic"
                 width="230"
@@ -397,6 +417,10 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-6.jpg    1x,
+                  ./images/products/img-6@2x.jpg 2x
+                "
                 src="./images/products/img-6.jpg"
                 alt="Honey"
                 width="230"
@@ -411,6 +435,10 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-7.jpg    1x,
+                  ./images/products/img-7@2x.jpg 2x
+                "
                 src="./images/products/img-7.jpg"
                 alt="Roasted fruits"
                 width="230"
@@ -425,6 +453,10 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-8.jpg    1x,
+                  ./images/products/img-8@2x.jpg 2x
+                "
                 src="./images/products/img-8.jpg"
                 alt="Classic"
                 width="230"
@@ -440,7 +472,7 @@
         </div>
       </section>
       <!-- Bestsellers section -->
-      <section class="bestsellers hide">
+      <section class="section bestsellers hide">
         <div class="container">
           <h2 class="bestsellers-title section-title">
             <span class="text-accent">Top</span> sellers
@@ -504,7 +536,7 @@
         </div>
       </section>
       <!-- Reviews section -->
-      <section class="reviews hide" id="reviews">
+      <section class="section reviews hide" id="reviews">
         <div class="container">
           <h2 class="reviews-title section-title">
             <span class="text-accent">Chocolate</span> is loved
@@ -846,5 +878,52 @@
     </div>
 
     <!-- <script src="./js/index.js"></script> -->
+
+    <!-- Example for adaptive images with tag <piture> -->
+    <section>
+      <h2>Our Portfolio</h2>
+      <li class="item">
+        <div class="wrapper">
+          <picture>
+            <!-- Desktop -->
+            <source
+              media="(min-width: 1158px)"
+              srcset="
+                ./images/portfolio/img-1_desk@1x 1x,
+                ./images/portfolio/img-1_desk@2x 2x
+              "
+            />
+            <!-- Tablet -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/portfolio/img-1_tab@1x 1x,
+                ./images/portfolio/img-1_tab@2x 2x
+              "
+            />
+            <!-- Mobile -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/portfolio/img-1_mob@1x 1x,
+                ./images/portfolio/img-1_mob@2x 2x
+              "
+            />
+            <img
+              class="portfolio-ill"
+              src="./images/portfolio/img-1_mob@1x"
+              alt="image"
+              width="360"
+              height="300"
+            />
+          </picture>
+          <p class="overlay"></p>
+        </div>
+        <div class="bottom-box">
+          <h3></h3>
+          <p></p>
+        </div>
+      </li>
+    </section>
   </body>
 </html>
